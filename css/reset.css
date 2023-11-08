@@ -1,0 +1,66 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Raleway',sans-serif;
+    margin: 0;
+    background-color: #fff;
+    line-height: 1.6;
+    text-rendering:optimizeLegibility;
+}
+h1,h2,h3,h4,p,ul,ol, figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 200;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+button, input[type="submit"]{
+    padding: 0;
+    background-color: transparent;
+    font-size: inherit;
+    border: 0;
+}
+input,textarea{
+    border: 0;
+
+}
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .6rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 91, 91);
+    outline: thin solid #222;
+}
+
+/*theme*/
+:root{
+   --bgc-header: #fff;
+   --bgc-main: #f1f1f1;
+   --bgc-sidebar-button: #000000;
+   --bgc-logo:  #f44336;
+   --border-color: #ccc;
+}

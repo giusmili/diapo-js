@@ -1,0 +1,171 @@
+:root{
+    --button-success: rgb(7, 70, 22);
+    --button-error: rgb(202, 60, 60);
+    --button-warning: rgb(223, 117, 20);
+    --button-secondary: rgb(66, 184, 221);
+    --default-color: #222;
+    --bgc-body: #66757F;
+    --bgc-header: #55ACEE;
+    --bgc-content: #E1E8ED;
+
+}
+
+/* bouton theme default*/
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: var(--default-color);
+    border-radius: .4rem;
+    text-shadow: 0 .1rem .1rem var(--default-color);
+}
+body{
+    background-color: var(--bgc-body);
+}
+header h1{
+    background-color: var(--default-color);
+    color: var(--bgc-content);
+    text-align: center;
+    line-height: 6.8rem;
+}
+
+/* slideshow theme */
+main{
+    max-width: 80rem;
+    margin: 5rem auto 2rem;
+    
+    box-shadow: 0 0 2rem var(--default-color);
+}
+
+/* style for table */
+main .primary-array h2{
+    padding: 1rem;
+    background-color: var(--bgc-content);
+}
+main .primary-array{
+    padding: 1rem;
+    background-color: #ccc;
+    margin-bottom: 1rem;
+}
+/* end table */
+
+/* display table */
+main .array-display{
+    display: table;
+    width: 100%;
+    margin-top: 1rem;
+    border-spacing: .1rem;
+    background-color: #222;
+}
+main .array-display ul{
+    display: table-row;
+    
+}
+main .array-display ul:nth-child(2) li{
+    background-color: #fff;
+}
+main .array-display h2{
+    display: block;
+    width: 100%;
+}
+main .array-display li{
+    display: table-cell;
+    width: calc(100% / 3);
+    font-weight: 400;
+    text-align: center;
+    background-color: var(--bgc-header);
+    color: #222;
+    text-transform: capitalize;
+    padding: .5rem;
+    
+}
+
+/* end display table */
+
+.elements{
+    display: flex;
+   
+   
+}
+.element{
+    position: relative;
+    flex: 1 0 100%;
+}
+.element figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.8);
+    padding: 1rem;
+    color: var(--bgc-content);
+}
+.element figcaption *{
+    text-align: center;
+}
+
+/* arrow */
+.diapo{
+    position: relative;
+    overflow: hidden;
+    
+   
+}
+#nav-left, #nav-right{
+    position: absolute;
+    top: 50%;   
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 4rem;
+
+}
+#nav-left{
+    left: 1rem;
+}
+#nav-right{
+    right: 0;
+}
+
+
+/* table */
+main .primary-array table{
+    width: 100%;
+    border-collapse: collapse;
+    border: solid .1rem #222;
+    
+}
+main .primary-array table :is(th,td){
+    border: solid .1rem #222;
+    padding: .5rem;
+}
+main .primary-array table thead th{
+    background-color: var(--bgc-header);
+    color: #222;
+    text-transform: capitalize;
+    
+}
+main .primary-array table thead th:first-child{
+    width: 30%;
+}
+main .primary-array table{
+    background-color: #fff;
+}
+main .primary-array table caption{
+    line-height: 4.5rem;
+    text-align  : left;
+}
+main .primary-array table tbody td:nth-child(3){
+    text-align: center;
+}
+/* end table */
+
+footer{
+    padding: 2rem;
+    
+}
+/* footer */
+footer :is(p,a){
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
